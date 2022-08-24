@@ -8,6 +8,10 @@
 - Within first month we had this, then that
 
 ## The Present
+
+_Here we'll prepare a report similar to OWD's https://github.com/openwebdocs/project/tree/main/impact-report-2021_
+_And the section will be based on it._
+
 - Started in April
 - Faces
 - They worked on these things
