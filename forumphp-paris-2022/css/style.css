@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'SourceCodePro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SourceCodePro'), local('SourceCodePro'), url(../fonts/SourceCodePro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SourceSansPro'), local('SourceSansPro'), url(../fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+:root {
+  --main-font: SourceSansPro;
+  --heading-font: SourceSansPro;
+}
+
+.reveal {
+    font-family: 'SourceSansPro';
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'SourceSansPro';
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+}
+
+body:before {
+  background: url(../img/php_foundation.svg) left top no-repeat;
+  background-size: 100px 93px;
+  width: 100px;
+  height: 93px;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(5deg);
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 9999;
+}
+
+.reveal a {
+    color: #000;
+}
+
+.reveal pre code {
+    font-family: SourceCodePro;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+li {
+    list-style-type: square;
+}
