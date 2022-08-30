@@ -38,7 +38,7 @@
 }
 
 body:before {
-  background: url(../img/php_foundation.svg) left top no-repeat;
+  background: url(../img/logos/php_foundation.svg) left top no-repeat;
   background-size: 100px 93px;
   width: 100px;
   height: 93px;
