@@ -274,6 +274,24 @@
                     </table>
                 </section>
 
+                <section data-background-color="#000000">
+                    <pre style="font-size: 1.5rem; margin-left: -100px;">$ git shortlog --summary --numbered --all --no-merges --after=2022-04-01</pre>
+                    <pre style="margin-left: -100px;"><code data-trim data-line-numbers="1,2,3,6,9,12" style="font-size: 1.5rem;">
+   127  Máté Kocsis
+   126  George Peter Banyard
+   110  Derick Rethans
+   104  Christoph M. Becker
+    87  Alex Dowad
+    85  Ilija Tovilo
+    68  Dmitry Stogov
+    63  Tim Düsterhus
+    51  Arnaud Le Blanc
+    41  David Carlier
+    40  Nikita Popov
+    34  Jakub Zelenka
+                    </code></pre>
+                </section>
+
                 <section style="text-align: left;">
                     <h4>Further Reading &amp; Listening</h4>
                     <ul style="font-size: 1.6rem;">
@@ -327,6 +345,8 @@
         </div>
 
         <script src="reveal.js-4.3.1/dist/reveal.js"></script>
+        <script src="reveal.js-4.3.1/plugin/highlight/highlight.js"></script>
+
         <script>
             Reveal.initialize({
                 controls: false,
@@ -335,7 +355,8 @@
                 hash: true,
                 pause: false,
                 transition: 'none',
-                backgroundTransition: 'none'
+                backgroundTransition: 'none',
+                plugins: [ RevealHighlight ]
             });
         </script>
     </body>
