@@ -46,3 +46,7 @@ body:before {
 li {
     list-style-type: square;
 }
+
+div.hljs-ln-n {
+    color: #000;
+}
