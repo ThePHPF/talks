@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="reveal.js-4.3.1/dist/reset.css">
+        <link rel="stylesheet" href="reveal.js-4.3.1/dist/reveal.css">
+        <link rel="stylesheet" href="reveal.js-4.3.1/dist/theme/white.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>The PHP Foundation</title>
+        <meta name="author" content="Roman Pronskiy and Sebastian Bergmann">
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background-image="img/logos/php_foundation.svg">
+                    <h2 style="font-size: 2rem; color: #fff; position: absolute; left: 0.5rem; bottom: -42rem;">Roman Pronskiy and Sebastian Bergmann</h2>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; width: 50%;">
+                                <img alt="Roman Pronskiy" src="img/people/roman.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Roman Pronskiy</small></p>
+                            </td>
+                            <td style="text-align: center; width: 50%;">
+                                <img alt="Sebastian Bergmann" src="img/people/sebastian.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Sebastian Bergmann</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section data-background-image="img/fortune.jpg">
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td class="fragment" data-fragment-index="1" style="text-align: center; vertical-align: middle;  border: none;">
+                                <img alt="Linux Foundation" src="img/logos/linux_foundation.svg" style="width: 75%;"/>
+                            </td>
+                            <td class="fragment" data-fragment-index="2" style="text-align: center; vertical-align: middle; border: none;">
+                                <img alt="Apache Software Foudation" src="img/logos/apache_software_foundation.svg" style="width: 75%;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fragment" data-fragment-index="1" style="text-align: center; border: none;"><small>1999</small></td>
+                            <td class="fragment" data-fragment-index="2" style="text-align: center; border: none;"><small>2000</small></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;  border: none;">
+                                <div class="r-stack">
+                                    <img class="fragment fade-in-then-out" data-fragment-index="3" alt="MySQL" src="img/logos/mysql.svg" style="width: 50%;"/>
+                                    <img class="fragment" data-fragment-index="4" alt="MariaDB Foundation" src="img/logos/mariadb_foundation.svg" style="width: 75%;"/>
+                                </div>
+                            </td>
+                            <td style="text-align: center; vertical-align: middle;  border: none;">
+                                <div class="r-stack">
+                                    <img class="fragment fade-in-then-out" data-fragment-index="5" alt="PHP" src="img/logos/php.svg" style="width: 50%;"/>
+                                    <img class="fragment" data-fragment-index="6" alt="The PHP Foundation" src="img/logos/php_foundation.svg" style="width: 50%;"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; border: none;">
+                                <div class="r-stack">
+                                    <small class="fragment fade-in-then-out" data-fragment-index="3">1995</small>
+                                    <small class="fragment" data-fragment-index="4">2012</small>
+                                </div>
+                            </td>
+                            <td style="text-align: center; border: none;">
+                                <div class="r-stack">
+                                    <small class="fragment fade-in-then-out" data-fragment-index="5">1995</small>
+                                    <small class="fragment" data-fragment-index="6">2021</small>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <img src="img/bus.svg" height="220rem;"/>
+                    &nbsp;&nbsp;
+                    <img src="img/elephpant.svg" height="180;">
+                    <hr style="margin-top: -2rem; border:solid #989cab 4px;"/>
+                </section>
+
+                <section>
+                    <p style="text-align: justify;">„The bus factor is a measurement of the risk resulting from information and capabilities not being shared among team members, derived from the phrase «in case they get hit by a bus».”</p>
+                    <p style="text-align: right; font-size: 1rem;"><a href="https://en.wikipedia.org/wiki/Bus_factor">https://en.wikipedia.org/wiki/Bus_factor</a></p>
+                </section>
+
+                <section>
+                    <p style="text-align: justify;">„Maybe as few as two people would have to wake up this morning and decide they want to do something different with their lives in order for the PHP project to lack the expertise and resources to move it forward in its current form, and at current pace.”</p>
+                    <p style="text-align: right; font-size: 1rem;"><a href="https://blog.krakjoe.ninja/2021/05/avoiding-busses.html">https://blog.krakjoe.ninja/2021/05/avoiding-busses.html</a></p>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; width: 50%;">
+                                <img alt="Dmitry Stogov" src="img/people/dmitry.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Dmitry Stogov</small></p>
+                            </td>
+                            <td style="text-align: center; width: 50%;">
+                                <img alt="Nikita Popov" src="img/people/nikita.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Nikita Popov</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Joe Watkins" src="img/people/joe.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Joe Watkins</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Nikita Popov" src="img/people/nikita.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Nikita Popov</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Roman Pronskiy" src="img/people/roman.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Roman Pronskiy</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Stefan Priebsch" src="img/people/stefan.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Stefan Priebsch</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Sebastian Bergmann" src="img/people/sebastian.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Sebastian Bergmann</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: left; vertical-align: middle; width: 50%;">
+                                <p style="font-size: 3rem;">We support, advance,<br/>and develop<br/>the PHP language.</p>
+                            </td>
+                            <td style="text-align: center; width: 50%;">
+                                <img alt="The PHP Foundation" src="img/logos/php_foundation.svg"/>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <p style="text-align: justify;">„The primary task of the PHP Foundation is to fund developers to [...] further advance the development and maintenance of the language.”</p>
+                    <p style="text-align: right; font-size: 1rem;"><a href="https://thephp.foundation/">https://thephp.foundation/</a></p>
+                </section>
+
+                <section>
+                    <p style="text-align: justify;">„[T]he language decisions are the matter of the PHP Internals community.”</p>
+                    <p style="text-align: right; font-size: 1rem;"><a href="https://thephp.foundation/">https://thephp.foundation/</a></p>
+                </section>
+
+                <section>
+                    <p style="text-align: justify;">„Open Collective is [...] a fundraising + legal status + money management platform for [communities].”</p>
+                    <p style="text-align: right; font-size: 1rem;"><a href="https://thephp.foundation/">https://opencollective.com/</a></p>
+                </section>
+
+                <section>
+                    <table style="font-size: 3.75rem; width: 100%;">
+                        <tr>
+                            <td style="border: none;"><strong>Total contributed:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 664,745.43</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>Fees:</strong></td>
+                            <td style="text-align: right; width: 20rem;">$ 84,093.56</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>Total raised:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 580,651.87</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table style="font-size: 3.75rem; width: 100%;">
+                        <tr>
+                            <td style="border: none;"><strong>Total raised:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 580,651.87</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>From organizations:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">77%</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>From individuals:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">23%</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table style="font-size: 3.75rem; width: 100%;">
+                        <tr>
+                            <td style="border: none;"><strong>Total raised:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 580,651.87</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>Recurring:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">39.5%</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>One-Time:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">60.5%</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table style="font-size: 3.75rem; width: 100%;">
+                        <tr>
+                            <td style="border: none;"><strong>Total raised:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 580,651.87</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>Paid to developers:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 104,251.77</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;"><strong>Current balance:</strong></td>
+                            <td style="text-align: right; border: none; width: 20rem;">$ 476,400.10</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="George Peter Banyard" src="img/people/george.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>George Peter Banyard</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Arnaud Le Blanc" src="img/people/arnaud.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Arnaud Le Blanc</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Máté Kocsis" src="img/people/mate.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Máté Kocsis</small></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Derick Rethans" src="img/people/derick.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Derick Rethans</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Ilija Tovilo" src="img/people/ilija.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Ilija Tovilo</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Jakub Zelenka" src="img/people/jakub.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Jakub Zelenka</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Roman Pronskiy" src="img/people/roman.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Roman Pronskiy</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Joe Watkins" src="img/people/joe.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Joe Watkins</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Sara Golemon" src="img/people/sara.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Sara Golemon</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Nikita Popov" src="img/people/nikita.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Nikita Popov</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Sebastian Bergmann" src="img/people/sebastian.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Sebastian Bergmann</small></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Josepha Haden" src="img/people/josepha.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Josepha Haden</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Benjamin Eberlei" src="img/people/benjamin.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Benjamin Eberlei</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Nils Adermann" src="img/people/nils.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Nils Adermann</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Nicolas Grekas" src="img/people/nicolas.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Nicolas Grekas</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 20%;">
+                                <img alt="Matthew Weier O'Phinney" src="img/people/matthew.jpg" style="border-radius: 50%; border: solid 1px #333;"/>
+                                <p><small style="font-size: 1rem;">Matthew Weier O'Phinney</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Dmitry Stogov" src="img/people/dmitry.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Dmitry Stogov</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Rasmus Lerdorf" src="img/people/rasmus.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Rasmus Lerdorf</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Ayesh Karunaratne" src="img/people/ayesh.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Ayesh Karunaratne</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Tobias Nyholm" src="img/people/tobias.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Tobias Nyholm</small></p>
+                            </td>
+                            <td style="text-align: center; border: none; width: 33%;">
+                                <img alt="Sergey Panteleev" src="img/people/sergey.jpg" style="border-radius: 50%; border: solid 1px #333; width: 75%;"/>
+                                <p><small>Sergey Panteleev</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section data-background-color="#000000">
+                    <pre style="font-size: 1.5rem; margin-left: -100px;">$ git shortlog --summary --numbered --all --no-merges --after=2022-04-01</pre>
+                    <pre style="margin-left: -100px;"><code data-trim data-line-numbers="1,2,4,5,9,12" style="font-size: 1.5rem;">
+   138  George Peter Banyard
+   133  Máté Kocsis
+   122  Christoph M. Becker
+   121  Derick Rethans
+   120  Ilija Tovilo
+    93  Alex Dowad
+    82  Dmitry Stogov
+    66  Tim Düsterhus
+    59  Arnaud Le Blanc
+    45  David Carlier
+    41  Nikita Popov
+    38  Jakub Zelenka
+                    </code></pre>
+                </section>
+
+                <section style="text-align: center;">
+                    <img src="img/survey_qr-code.png" alt="" height="500rem">
+                    <p><small>Take a survey about the evolution of PHP!</small></p>
+                    <p><small><small>(with elePHPant raffle)</small></small></p>
+                </section>
+
+                <section style="text-align: left;">
+                    <h4>Further Reading &amp; Listening</h4>
+                    <ul style="font-size: 1.6rem;">
+                        <li>https://blog.jetbrains.com/phpstorm/2021/11/the-php-foundation</li>
+                        <li>https://voicesoftheelephpant.com/2021/12/17/interview-with-the-php-foundation</li>
+                        <li>https://thephp.foundation/blog/2022/05/06/interview-with-core-developers</li>
+                        <li>https://blog.opencollective.com/php-foundation-alive-and-kicking</li>
+                    </ul>
+                </section>
+
+                <section style="text-align: left;">
+                    <table style="font-size: 2rem;">
+                        <tr>
+                            <td colspan="2" style="border: none;">
+                                <span><i class="fa fa-external-link-square" style="color: #6b57ff;"></i> <a href="https://thephp.foundation/">https://thephp.foundation</a></span><br/>
+                                <br/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;">
+                                <span><i class="fa fa-envelope-square" style="color: #6b57ff;"></i> <a href="mailto:roman@pronskiy.com">roman.pronskiy@jetbrains.com</a></span><br/>
+                            </td>
+                            <td style="border: none;">
+                                <span><i class="fa fa-envelope-square" style="color: #6b57ff;"></i> <a href="mailto:sebastian@thephp.cc">sebastian@thephp.cc</a></span><br/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: none;">
+                                <span><i class="fa fa-twitter-square" style="color: #6b57ff;"></i> <a href="https://twitter.com/pronskiy">@pronskiy</a></span><br/>
+                            </td>
+                            <td style="border: none;">
+                                <span><i class="fa fa-twitter-square" style="color: #6b57ff;"></i> <a href="https://twitter.com/s_bergmann">@s_bergmann</a></span><br/>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section style="text-align: left;">
+                    <h4>Image Credits</h4>
+                    <ul style="font-size: 1.6rem;">
+                        <li>Fortune, February 2004, 149(3):40-X</li>
+                        <li>https://commons.wikimedia.org/wiki/File:ASF_Logo.svg</li>
+                        <li>https://commons.wikimedia.org/wiki/File:Linux_Foundation_logo_2013.svg</li>
+                        <li>https://mysql.com/</li>
+                        <li>https://mariadb.org/</li>
+                        <li>https://openmoji.org/library/emoji-1F68C</li>
+                        <li>https://commons.wikimedia.org/wiki/File:Webysther_20160423_-_Elephpant.svg</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <script src="reveal.js-4.3.1/dist/reveal.js"></script>
+        <script src="reveal.js-4.3.1/plugin/highlight/highlight.js"></script>
+
+        <script>
+            Reveal.initialize({
+                controls: false,
+                progress: false,
+                center: true,
+                hash: true,
+                pause: false,
+                transition: 'none',
+                backgroundTransition: 'none',
+                plugins: [ RevealHighlight ]
+            });
+        </script>
+    </body>
+</html>
