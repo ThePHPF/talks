@@ -1,0 +1,52 @@
+.reveal {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+}
+
+body:before {
+  background: url(../img/logos/php_foundation.svg) left top no-repeat;
+  background-size: 100px 93px;
+  width: 100px;
+  height: 93px;
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(5deg);
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 9999;
+}
+
+.reveal a {
+    color: #000;
+}
+
+.reveal pre code {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+li {
+    list-style-type: square;
+}
+
+div.hljs-ln-n {
+    color: #000;
+}
